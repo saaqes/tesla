@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fbbd6"/><stop offset=".55" stop-color="#e6e3dc"/><stop offset="1" stop-color="#efe1c6"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9b685"/><stop offset=".5" stop-color="#c99a5b"/><stop offset="1" stop-color="#a9743a"/>
+    </linearGradient>
+    <filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4"/>
+      <feColorMatrix values="0 0 0 0 .4  0 0 0 0 .27  0 0 0 0 .12  0 0 0 .5 -.1"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <path d="M0 470 L120 420 L240 450 L420 360 L560 430 L700 380 L860 440 L1040 350 L1200 430 L1380 390 L1600 450 L1600 520 L0 520Z" fill="#7d8fa8" opacity=".75"/>
+  <path d="M0 500 L200 470 L380 495 L620 450 L860 490 L1100 460 L1360 495 L1600 470 L1600 540 L0 540Z" fill="#9aa5b3" opacity=".8"/>
+  <rect y="520" width="1600" height="380" fill="url(#sand)"/>
+  <rect y="520" width="1600" height="380" filter="url(#n)" opacity=".6"/>
+</svg>

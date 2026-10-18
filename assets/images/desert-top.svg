@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="l" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".004 .011" numOctaves="5" seed="7"/>
+      <feColorMatrix values="0 0 0 0 .98  0 0 0 0 .78  0 0 0 0 .42  1.7 0 0 0 -.62"/>
+    </filter>
+    <filter id="d" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".007 .02" numOctaves="4" seed="21"/>
+      <feColorMatrix values="0 0 0 0 .42  0 0 0 0 .22  0 0 0 0 .05  1.6 0 0 0 -.55"/>
+    </filter>
+    <filter id="g" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="3"/>
+      <feColorMatrix values="0 0 0 0 .3  0 0 0 0 .18  0 0 0 0 .05  0 0 0 .55 -.1"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#c8862f"/>
+  <rect width="1600" height="900" filter="url(#d)"/>
+  <rect width="1600" height="900" filter="url(#l)"/>
+  <rect width="1600" height="900" filter="url(#g)" opacity=".5"/>
+</svg>

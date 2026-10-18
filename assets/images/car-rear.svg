@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" preserveAspectRatio="xMidYMax meet">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f1f1f2"/>
+      <stop offset=".45" stop-color="#c4c5c8"/>
+      <stop offset="1" stop-color="#6a6b70"/>
+    </linearGradient>
+    <linearGradient id="wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#9a9b9f"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000" stop-opacity=".45"/>
+      <stop offset=".18" stop-color="#000" stop-opacity="0"/>
+      <stop offset=".82" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".45"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-400%" width="120%" height="900%"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <!-- cabina -->
+  <path d="M255 110 Q400 52 545 110 L560 150 L240 150Z" fill="#17181b"/>
+  <!-- carrocería -->
+  <path d="M120 100 L680 100 L742 318 L772 446 L28 446 L58 318Z" fill="url(#body)"/>
+  <path d="M120 100 L680 100 L742 318 L772 446 L28 446 L58 318Z" fill="url(#side)"/>
+  <!-- alerón -->
+  <path d="M34 74 Q34 36 86 34 L714 34 Q766 36 766 74 L744 112 L56 112Z" fill="url(#wing)"/>
+  <path d="M56 112 L744 112 L736 124 L64 124Z" fill="#55565a" opacity=".55"/>
+  <rect x="34" y="40" width="22" height="120" rx="8" fill="#d9dadc" opacity=".9"/>
+  <rect x="744" y="40" width="22" height="120" rx="8" fill="#d9dadc" opacity=".9"/>
+  <!-- franja de luz trasera -->
+  <rect x="120" y="156" width="560" height="14" rx="7" fill="#ff2a33" filter="url(#glow)" opacity=".85"/>
+  <rect x="120" y="159" width="560" height="7" rx="3.5" fill="#ff3b43"/>
+  <!-- matrícula -->
+  <rect x="362" y="206" width="76" height="38" rx="3" fill="#e9e9ea"/>
+  <rect x="368" y="212" width="64" height="26" rx="2" fill="#bcbcbf"/>
+  <!-- difusor -->
+  <path d="M170 268 L630 268 L676 446 L124 446Z" fill="#141416"/>
+  <path d="M170 268 L630 268 L636 292 L164 292Z" fill="#26272a"/>
+  <g fill="#050506" stroke="#8d8e92" stroke-width="3">
+    <circle cx="270" cy="345" r="17"/><circle cx="357" cy="345" r="17"/>
+    <circle cx="443" cy="345" r="17"/><circle cx="530" cy="345" r="17"/>
+  </g>
+  <!-- ruedas -->
+  <rect x="14" y="304" width="78" height="142" rx="20" fill="#0d0d0f"/>
+  <rect x="708" y="304" width="78" height="142" rx="20" fill="#0d0d0f"/>
+</svg>

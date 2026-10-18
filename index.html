@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tesla Roadster</title>
+  <meta name="description" content="Tesla Roadster, 2ª generación. De 0 a 100 en menos de un segundo, vuela, sube paredes y sigue por el techo.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter+Tight:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="top">
+    <a class="brand" href="#inicio" aria-label="Roadster, volver al inicio">ROADSTER</a>
+    <p class="meta">Tesla · 2ª generación · Presentada el 10·10·2026 · McGregor, Texas</p>
+    <button class="btn-reserve" type="button" data-open-reserve aria-haspopup="dialog">Reservar <span aria-hidden="true">↗</span></button>
+    <p class="section-label" id="sectionLabel" aria-live="polite"></p>
+  </header>
+
+  <main id="contenido">
+    <h1 class="sr-only">Tesla Roadster</h1>
+    <div class="track" id="inicio">
+      <div class="stage" id="stage">
+
+        <!-- HERO -->
+        <section class="scene hero" data-scene="hero" aria-label="Roadster">
+          <canvas class="stars" aria-hidden="true"></canvas>
+          <div class="glow" aria-hidden="true"></div>
+          <div class="hero-title" aria-hidden="true">ROADSTER</div>
+          <div class="hero-car" aria-hidden="true">
+            <img src="assets/images/car-rear.svg" alt="" draggable="false">
+            <i class="nz" style="--x:33.75%"></i><i class="nz" style="--x:44.6%"></i>
+            <i class="nz" style="--x:55.4%"></i><i class="nz" style="--x:66.25%"></i>
+          </div>
+          <p class="cap cap-l">El deportivo más rápido jamás fabricado.</p>
+          <p class="cap cap-r">Desliza para descubrir lo que puede hacer.</p>
+        </section>
+
+        <!-- 01 DESPEGUE -->
+        <section class="scene s1" data-scene="s1" aria-label="Despegue">
+          <div class="layer s1-a" data-layer="a">
+            <img class="bg" src="assets/images/desert-front.svg" alt="" draggable="false">
+            <div class="video-slot" data-video="desert"></div>
+            <div class="s1-car">
+              <img src="assets/images/car-rear.svg" alt="" draggable="false">
+              <i class="nz hot" style="--x:33.75%"></i><i class="nz hot" style="--x:44.6%"></i>
+              <i class="nz hot" style="--x:55.4%"></i><i class="nz hot" style="--x:66.25%"></i>
+            </div>
+            <div class="haze"></div>
+          </div>
+          <div class="layer s1-b" data-layer="b">
+            <div class="video-slot" data-video="wheel"></div>
+            <div class="body-panel"></div>
+            <img class="wheel" src="assets/images/wheel.svg" alt="" draggable="false">
+            <div class="streaks"></div>
+          </div>
+          <div class="layer s1-c" data-layer="c">
+            <img class="bg" src="assets/images/desert-road.svg" alt="" draggable="false">
+            <div class="video-slot" data-video="road"></div>
+          </div>
+          <p class="t-lead s1-lead">De 0 a 100<br>en menos de un<br><span>segundo.</span></p>
+          <div class="counter" id="counter" aria-label="Cronómetro">00:00.00</div>
+          <p class="cap cap-l small">Sin cambios de marcha, sin pausa: el par llega entero desde el primer instante.</p>
+        </section>
+
+        <!-- 02 EL SALTO -->
+        <section class="scene s2" data-scene="s2" aria-label="El salto">
+          <img class="bg" src="assets/images/desert-top.svg" alt="" draggable="false">
+          <div class="video-slot" data-video="jump"></div>
+          <div class="vuela vuela-back" aria-hidden="true">VUELA</div>
+          <div class="s2-car" id="s2car" aria-hidden="true">
+            <img src="assets/images/car-top-gold.svg" alt="" draggable="false">
+            <i class="thr" style="--y:6%"></i><i class="thr" style="--y:94%"></i>
+          </div>
+          <div class="vuela vuela-front" aria-hidden="true">VUELA</div>
+          <svg class="person" viewBox="0 0 40 40" aria-hidden="true"><g fill="#f2efe9"><circle cx="20" cy="9" r="5"/><path d="M20 14l-10 6 3 4 7-4 3 14 5-1-3-15 9 5 3-4z"/></g></svg>
+          <p class="t-lead s2-lead">Un Model 3.<br>Un Model Y.<br><span>Un Roadster.</span></p>
+        </section>
+
+        <!-- 03 LA PARED -->
+        <section class="scene s3" data-scene="s3" aria-label="La pared">
+          <div class="world" id="world">
+            <div class="wall" id="wall"><i class="edge l"></i><i class="edge r"></i></div>
+          </div>
+          <div class="ceiling" id="ceiling" aria-hidden="true"><i class="beam b1"></i><i class="beam b2"></i></div>
+          <div class="video-slot" data-video="wall"></div>
+          <div class="s3-car" id="s3car" aria-hidden="true"><img src="assets/images/car-top-dark.svg" alt="" draggable="false"></div>
+          <dl class="hud">
+            <div><dt>Dirección</dt><dd id="hudDir">0 %</dd></div>
+            <div><dt>Inclinación</dt><dd id="hudInc">0°</dd></div>
+            <div><dt>Carga</dt><dd id="hudG">1,0 G</dd></div>
+          </dl>
+          <p class="t-lead s3-lead">Sube paredes.<br>Y sigue por el techo.</p>
+          <p class="cap cap-l small s3-small">Adherencia activa en cualquier superficie, también boca abajo.</p>
+        </section>
+
+        <canvas class="fx" id="fx" aria-hidden="true"></canvas>
+      </div>
+    </div>
+  </main>
+
+  <dialog class="reserve" id="reserve" aria-labelledby="reserveTitle">
+    <form method="dialog" id="reserveForm" novalidate>
+      <button class="close" type="button" data-close-reserve aria-label="Cerrar">×</button>
+      <h2 id="reserveTitle">Reservar Roadster</h2>
+      <label>Nombre<input name="nombre" type="text" autocomplete="name" required minlength="2"></label>
+      <p class="err" data-for="nombre"></p>
+      <label>Correo electrónico<input name="email" type="email" autocomplete="email" required></label>
+      <p class="err" data-for="email"></p>
+      <button class="submit" type="submit">Enviar solicitud</button>
+      <p class="status" id="reserveStatus" role="status"></p>
+    </form>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
